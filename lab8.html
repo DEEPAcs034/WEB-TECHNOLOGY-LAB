@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON and Data Manipulation</title>
+    <link rel="stylesheet" href="8.css">
+</head>
+<body>
+    <h1>JSON and Data Manipulation</h1>
+    <section id="jsonToObject">
+        <h2>convert Json Text to JavaScript object</h2>
+        <textarea id="jsonInput" placeholder="Enter JSON text here"></textarea>
+        <button onclick=" convertJsonToObject()">Convert to object</button>
+        <pre id="objectOutput"></pre>
+    </section>
+    <section id="jsonToDate">
+        <h2>Convert Json Data Text to JavaScript Date object</h2>
+        <input type="text" id="dateInput" placeholder='{"date":"2023-10-01"}'>
+        <button onclick="convertJsonToDate()">Convert to Date</button>
+        <p id="dateOutput"></p>
+    </section>
+    <section id="jsonCsvConversion">
+        <h2>onvert Json to csv and csv to Json</h2>
+        <textarea id="jsonCsvInput" placeholder="Enter Json for csv conversion"></textarea>
+        <button onclick="convertJsonToCsv()">JSON to CSV</button>
+        <pre id="csvOutput"></pre>
+        <textarea id="csvToJsonInput" placeholder="Enter csv for json converstion"></textarea>
+        <button onclick="convertCsvToJson()">CSV to Json</button>
+        <pre id="jsonOutput"></pre>
+    </section>
+    <section id="hashString">
+        <h2>Create Hash from String</h2>
+        <input type="text" id="hashInput"placeholder="Enter text to hash">
+        <button onclick="createHash()">Generate Hash</button>  
+        <p id="hashOutput"></p>      
+    </section>
+    <script src="8.js"></script>
+</body>
+</html>
